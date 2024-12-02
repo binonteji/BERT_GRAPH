@@ -44,8 +44,7 @@ optional arguments:
 
 Example, training for yeast:
 ```
-    python train_bert_walk.py --walk_length 10 --organism yeast --epochs 100 \
-    --input_graphs inputs/yeast_networks/Costanzo-2016.txt inputs/yeast_networks/Hu-2007.txt inputs/yeast_networks/Krogan-2006.txt
+    python train_bert_walk.py --walk_length 10 --organism FIRSTMM_DB --epochs 40 --input_graphs inputs/FIRSTMM_DB/FIRSTMM_DB_0.txt inputs/FIRSTMM_DB/FIRSTMM_DB_1.txt inputs/FIRSTMM_DB/FIRSTMM_DB_2.txt inputs/FIRSTMM_DB/FIRSTMM_DB_3.txt inputs/FIRSTMM_DB/FIRSTMM_DB_4.txt inputs/FIRSTMM_DB/FIRSTMM_DB_5.txt inputs/FIRSTMM_DB/FIRSTMM_DB_6.txt inputs/FIRSTMM_DB/FIRSTMM_DB_7.txt inputs/FIRSTMM_DB/FIRSTMM_DB_8.txt
 ```
 ## Extract Embedding from Trained 
 
@@ -62,7 +61,7 @@ The model uses a pre-traind BERT GRAPH model, and fine tune it on sequence level
 ```
 usage: train_classifier.py [-h] [--model_name MODEL_NAME] [--data_path DATA_PATH]
 
-Tune the trainded BBERTwalk model on classification task.
+Tune the trainded  model on classification task.
 
 optional arguments:
   -h, --help            show this help message and exit
